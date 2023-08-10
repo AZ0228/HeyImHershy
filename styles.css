@@ -1,0 +1,55 @@
+:root{
+    --bg: #F2F1EB;
+    --accent: #000;
+    --accent1: #fff;
+}
+
+body{
+    background-color: var(--bg);
+}
+
+.polaroid-container{
+    display:flex;
+}
+
+.polaroid{
+    background-color: var(--bg);
+    border-top: 1px solid var(--accent1);
+    border-left: 1px solid var(--accent);
+    border-bottom: 1px solid var(--accent);
+    border-right: 1px solid var(--accent1);
+    width:336px;
+    height:390px;
+    display:flex;
+    flex-direction:column;
+}
+
+.polaroid img{
+    margin:18px;
+    border-bottom: 1px solid var(--accent1);
+    border-right: 1px solid var(--accent);
+    border-top: 1px solid var(--accent);
+    border-left: 1px solid var(--accent1);
+
+}
+
+#polaroid1{
+    transform:rotate(-6.5deg);
+    z-index: 1;
+}
+
+#polaroid2{
+    transform:rotate(3.5deg);
+    z-index: 2;
+
+}
+
+#polaroid3{
+    transform:rotate(-3.5deg);
+    z-index: 1;
+}
+
+#polaroid4{
+    transform:rotate(12deg);
+    z-index: 0;
+}
