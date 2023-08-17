@@ -2,10 +2,17 @@
     --bg: #F2F1EB;
     --accent: #000;
     --accent1: #fff;
+    --width:1600px;
 }
 
 body{
     background-color: var(--bg);
+    display: flex;
+    justify-content: center;
+}
+
+#content{
+    max-width: var(--width);
 }
 
 .polaroid-container{
