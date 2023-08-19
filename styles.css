@@ -6,8 +6,13 @@
 }
 
 @font-face {
-    font-family: Garet;
-    src: url(Fonts/garet/Garet-Book.ttf);
+    font-family: 'Garet';
+    src: url(Fonts/garet/Garet-Book.otf) format('truetype');
+}
+
+@font-face {
+    font-family: Garet1;
+    src: url(Fonts/garet/Garet-Heavy.woff2) format('truetype');
 }
 
 body{
@@ -32,7 +37,6 @@ body{
     font-size: 90px;
     font-weight: 950;
     margin: 0 0;
-    margin-top:50px;
 }
 
 .socials{
@@ -60,6 +64,11 @@ body{
     height:390px;
     display:flex;
     flex-direction:column;
+    transition: all 0.5s;
+}
+
+.polaroid:hover{
+    scale:1.05;
 }
 
 .polaroid img{
@@ -71,6 +80,19 @@ body{
 
 }
 
+.pic{
+    width: calc(100% - 36px);
+    background-size: cover;
+    margin: 18px;
+    border-bottom: 1px solid var(--accent1);
+    border-right: 1px solid var(--accent);
+    border-top: 1px solid var(--accent);
+    border-left: 1px solid var(--accent1);
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 #polaroid1{
     transform:rotate(-6.5deg);
@@ -78,9 +100,8 @@ body{
 }
 
 #polaroid2{
-    transform:rotate(3.5deg);
+    transform: rotate(3.5deg) translate(0px, -30px);
     z-index: 2;
-
 }
 
 #polaroid3{
@@ -88,8 +109,60 @@ body{
     z-index: 1;
 }
 
+#p1{
+    background-image: url(Assets/Images/LTK.png);
+
+}
+
+#p2{
+    background-image: url(Assets/Images/YOUTUBE.png);
+
+}
+
+#p3{
+    background-image: url(Assets/Images/AMZ.png);
+}
+
+
 #polaroid4{
-    transform:rotate(12deg);
+    transform: rotate(12deg)translate(-20px, -40px);
     z-index: 0;
 }
 
+.middle-text{
+    color: white;
+    padding-top: 50px;
+}
+
+.middle-text h2{
+    font-family: 'Garet1';
+    font-weight: normal;
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+    text-shadow: rgba(0, 0, 0, 0.325) 0px 2.19999px 9.34996px;
+}
+
+.middle-text p{
+    font-family: 'Garet';
+    font-size: 30px;
+    text-align: center;
+    margin: 5px 0 !important;
+    line-height: 1;
+    text-shadow: rgba(0, 0, 0, 0.325) 0px 2.19999px 9.34996px;
+}
+
+.test{
+    height:500px;
+    width:500px;
+    border: 3px solid black;
+    display: grid;
+}
+
+.test p{
+    margin:0;
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+}
