@@ -23,9 +23,11 @@ body{
 
 #content{
     max-width: var(--width);
+    position: relative;
 }
 /* ------------------==== pins ====---------------------- */
-.pin{
+.pin,
+.fixed{
     position: absolute;
     transition: scale 0.5s;
 }
@@ -39,7 +41,23 @@ body{
     width:120px;
     z-index: 99;
     padding-top: 300px;
-    padding-left: 250px;
+    margin-left: 250px;
+}
+
+#heart{
+    height:120px;
+    width:120px;
+    z-index: 2;
+    margin-left: 650px;
+    transform: translateY(-70px) rotate(15deg)
+}
+
+#note{
+    height:400px;
+    z-index: 0;
+    /* margin-left: 1050px; */
+    top: -100px;
+    right: -100px;
 }
 /* ------------------------------------------------------- */
 
