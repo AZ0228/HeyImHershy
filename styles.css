@@ -24,6 +24,24 @@ body{
 #content{
     max-width: var(--width);
 }
+/* ------------------==== pins ====---------------------- */
+.pin{
+    position: absolute;
+    transition: scale 0.5s;
+}
+
+.pin:hover{
+    scale:1.05;
+}
+
+#flower{
+    height:120px;
+    width:120px;
+    z-index: 99;
+    padding-top: 300px;
+    padding-left: 250px;
+}
+/* ------------------------------------------------------- */
 
 .header{
     display: flex;
