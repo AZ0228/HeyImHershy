@@ -27,8 +27,9 @@
 
 .lj{
     font-family: LeJour;
-    transform: translateY(10px);
+    transform: translateY(20px);
     font-weight: 100;
+    font-size: 80px;
 }
 
 h1{
@@ -37,6 +38,16 @@ h1{
     font-weight: 950;
     margin: 0 0;
     line-height: 1;
+}
+
+h2{
+    position:absolute;
+    justify-self: center;
+    align-self: center;
+    font-family: 'GARET';
+    font-size: 60px;
+    text-shadow: rgba(0, 0, 0, 0.325) 0px 2.19999px 9.34996px;
+    color: white;
 }
 
 p{
@@ -275,15 +286,56 @@ body{
     gap: 30px;
     margin-bottom: 30px;
 }
-.current-favorites section div{
-    background-size:cover;
-    height:600px;
-    width:600px;
+
+#current-favorites-container{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    padding-top:80px;
 }
+
+.current-favorites{
+    display:flex;
+    gap: 50px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.current-favorites section div{
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 620px;
+    width: 620px;
+    position: relative;
+    display: grid;
+    transition: all 0.5s;
+}
+
+.current-favorites section div:hover{
+    scale: 1.05;
+}
+
+#hair:hover{
+    scale:1.25 !important;
+}
+
 #skincare{
     background-image: url('Assets/Images/SKINCARE.png');
 }
 
 #hair{
+    background-image: url('Assets/Images/HAIR.png');
+    height: 500px;
+    scale: 1.15;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
 
+#college{
+    background-image: url('Assets/Images/COLLEGE.png');
+    height: 580px;
+}
+
+#makeup{
+    background-image: url('Assets/Images/MAKEUP.png');
 }
