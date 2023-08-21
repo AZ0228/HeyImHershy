@@ -275,3 +275,15 @@ body{
     gap: 30px;
     margin-bottom: 30px;
 }
+.current-favorites section div{
+    background-size:cover;
+    height:600px;
+    width:600px;
+}
+#skincare{
+    background-image: url('Assets/Images/SKINCARE.png');
+}
+
+#hair{
+
+}
