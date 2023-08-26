@@ -93,6 +93,12 @@ body{
     overflow: hidden;
 }
 /* ------------------==== pins ====---------------------- */
+
+.pin-before{
+    opacity:0;
+    scale:0.5;
+}
+
 .pin,
 .fixed{
     position: absolute;
@@ -135,7 +141,7 @@ body{
     width:100%;
 }
 
-.headerbefore{
+.header-before{
     transform:translateY(-100px) !important;
     opacity: 0;
 }

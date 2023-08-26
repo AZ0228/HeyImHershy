@@ -11,25 +11,15 @@ Draggable.create(".pin", {
     }
 });
 
-function polaroidStart(){
-    let p1 = id("polaroid1");
-    let p2 = id("polaroid2");
-    let p3 = id("polaroid3");
-    let p4 = id("polaroid4");
-    p1.classList.remove("p1before")
-    p2.classList.remove("p2before")
-    p3.classList.remove("p3before")
-    p4.classList.remove("p4before")
-
+function pinStart(){
+    let pins = qsa('.pin');
+    for(let i=0;i<pins.length;i++){
+        pins[i].classList.remove('pin-before')
+    }
 }
 
 function polaroidStart1(){
-    let polaroids = [];
-    polaroids.push(id("polaroid1"))
-    polaroids.push(id("polaroid2"))
-    polaroids.push(id("polaroid3"))
-    polaroids.push(id("polaroid4"))
-    //polaroids.push(qs('.header'))
+    let polaroids = qsa('.polaroid');
     for(let i=0;i<polaroids.length;i++){
         polaroids[i].classList.remove('pbefore');
     }
@@ -38,7 +28,7 @@ function polaroidStart1(){
 
 function headerStart(){
     let header = qs('.header');
-    header.classList.remove('headerbefore')
+    header.classList.remove('header-before')
 }
 
 
@@ -46,6 +36,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
     setTimeout(() => {
         polaroidStart1();
         headerStart();
+        setTimeout(() => {
+            pinStart();
+        }, 800);
     }, 200);
 })
 
