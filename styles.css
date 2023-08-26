@@ -135,8 +135,8 @@ body{
     width:100%;
 }
 
-.pbefore .header{
-    transform:translateY(100px) !important;
+.headerbefore{
+    transform:translateY(-100px) !important;
     opacity: 0;
 }
 
@@ -146,7 +146,7 @@ body{
     padding: 50px;
     box-sizing: border-box;
     /* margin-left: 50px; */
-    transition: all 2s;
+    transition: all 1s;
 }
 
 .header h1{

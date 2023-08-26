@@ -36,9 +36,16 @@ function polaroidStart1(){
 
 }
 
+function headerStart(){
+    let header = qs('.header');
+    header.classList.remove('headerbefore')
+}
+
+
 document.addEventListener('DOMContentLoaded', ()=>{
     setTimeout(() => {
         polaroidStart1();
+        headerStart();
     }, 200);
 })
 
