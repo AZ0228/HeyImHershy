@@ -11,3 +11,30 @@ Draggable.create(".pin", {
     }
 });
 
+function polaroidStart(){
+    let p1 = id("polaroid1");
+    let p2 = id("polaroid2");
+    let p3 = id("polaroid3");
+    let p4 = id("polaroid4");
+    p1.classList.remove("p1before")
+    p2.classList.remove("p2before")
+    p3.classList.remove("p3before")
+    p4.classList.remove("p4before")
+
+}
+
+document.addEventListener('DOMContentLoaded', ()=>{
+    polaroidStart();
+})
+
+function id(name){
+    return document.getElementById(name);
+}
+
+function qs(name){
+    return document.querySelector(name);
+}
+
+function qsa(name){
+    return document.querySelectorAll(name);
+}

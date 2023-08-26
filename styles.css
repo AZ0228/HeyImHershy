@@ -178,7 +178,8 @@ body{
     height:390px;
     display:flex;
     flex-direction:column;
-    transition: all 0.5s;
+    transition: all 0.5s ease-in-out;
+    transition: transform 1s ease-in-out, opacity 1.5s ease-in-out, scale 0.3s ease-in-out;
 }
 
 .polaroid:hover{
@@ -205,7 +206,8 @@ body{
 }
 
 .p1before{
-    transform:rotate(-26.5deg) !important;
+    transform:rotate(-46.5deg) !important;
+    opacity: 0;
 }
 
 #polaroid1{
@@ -214,7 +216,9 @@ body{
 }
 
 .p2before{
-    transform:rotate(-16.5deg) !important;
+    transform:rotate(-36.5deg) !important;
+    opacity:0;
+
 }
 
 #polaroid2{
@@ -223,7 +227,9 @@ body{
 }
 
 .p3before{
-    transform:rotate(-23.5deg) !important;
+    transform:rotate(36.5deg) !important;
+    opacity:0;
+
 }
 
 #polaroid3{
@@ -232,7 +238,9 @@ body{
 }
 
 .p4before{
-    transform:rotate(-8.5deg) !important;
+    transform:rotate(52deg) !important;
+    opacity:0;
+
 }
 
 #polaroid4{
