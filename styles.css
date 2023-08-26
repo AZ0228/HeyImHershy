@@ -204,9 +204,17 @@ body{
     justify-content: center;
 }
 
+.p1before{
+    transform:rotate(-26.5deg) !important;
+}
+
 #polaroid1{
     transform:rotate(-6.5deg);
     z-index: 1;
+}
+
+.p2before{
+    transform:rotate(-16.5deg) !important;
 }
 
 #polaroid2{
@@ -214,9 +222,22 @@ body{
     z-index: 2;
 }
 
+.p3before{
+    transform:rotate(-23.5deg) !important;
+}
+
 #polaroid3{
     transform:rotate(-3.5deg);
     z-index: 1;
+}
+
+.p4before{
+    transform:rotate(-8.5deg) !important;
+}
+
+#polaroid4{
+    transform: rotate(12deg)translate(-20px, -40px);
+    z-index: 0;
 }
 
 #p1{
@@ -234,10 +255,7 @@ body{
 }
 
 
-#polaroid4{
-    transform: rotate(12deg)translate(-20px, -40px);
-    z-index: 0;
-}
+
 
 .middle-text{
     color: white;

@@ -10,3 +10,4 @@ Draggable.create(".pin", {
         });
     }
 });
+
