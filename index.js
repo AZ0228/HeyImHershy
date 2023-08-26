@@ -23,8 +23,23 @@ function polaroidStart(){
 
 }
 
+function polaroidStart1(){
+    let polaroids = [];
+    polaroids.push(id("polaroid1"))
+    polaroids.push(id("polaroid2"))
+    polaroids.push(id("polaroid3"))
+    polaroids.push(id("polaroid4"))
+    //polaroids.push(qs('.header'))
+    for(let i=0;i<polaroids.length;i++){
+        polaroids[i].classList.remove('pbefore');
+    }
+
+}
+
 document.addEventListener('DOMContentLoaded', ()=>{
-    polaroidStart();
+    setTimeout(() => {
+        polaroidStart1();
+    }, 200);
 })
 
 function id(name){

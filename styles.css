@@ -135,12 +135,18 @@ body{
     width:100%;
 }
 
+.pbefore .header{
+    transform:translateY(100px) !important;
+    opacity: 0;
+}
+
 .header{
     display: flex;
     flex-direction: column;
     padding: 50px;
     box-sizing: border-box;
     /* margin-left: 50px; */
+    transition: all 2s;
 }
 
 .header h1{
@@ -203,6 +209,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.pbefore:not(.header){
+    transform:translateY(   100px) !important;
+    opacity: 0;
 }
 
 .p1before{
