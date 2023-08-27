@@ -10,3 +10,46 @@ Draggable.create(".pin", {
         });
     }
 });
+
+function pinStart(){
+    let pins = qsa('.pin');
+    for(let i=0;i<pins.length;i++){
+        pins[i].classList.remove('pin-before')
+    }
+}
+
+function polaroidStart1(){
+    let polaroids = qsa('.polaroid');
+    for(let i=0;i<polaroids.length;i++){
+        polaroids[i].classList.remove('pbefore');
+    }
+
+}
+
+function headerStart(){
+    let header = qs('.header');
+    header.classList.remove('header-before')
+}
+
+
+document.addEventListener('DOMContentLoaded', ()=>{
+    setTimeout(() => {
+        polaroidStart1();
+        headerStart();
+        setTimeout(() => {
+            pinStart();
+        }, 800);
+    }, 200);
+})
+
+function id(name){
+    return document.getElementById(name);
+}
+
+function qs(name){
+    return document.querySelector(name);
+}
+
+function qsa(name){
+    return document.querySelectorAll(name);
+}
