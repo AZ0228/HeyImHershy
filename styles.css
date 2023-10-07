@@ -354,6 +354,7 @@ body{
 
 .heading{
     display:flex;
+    flex-direction: row;
     gap: 30px;
     margin-bottom: 30px;
     /* padding-left: 50px; */
@@ -522,6 +523,7 @@ body{
     }
     #current-heading{
         flex-direction: column;
+        margin-left: 20px;
     }
 }
 
@@ -551,6 +553,9 @@ body{
     }
     .polaroid-container-mobile{
         gap:0;
+    }
+    .heading{
+        flex-direction: column;
     }
 }
 
