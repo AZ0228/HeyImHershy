@@ -515,6 +515,7 @@ body{
     }
     .polaroid-container-mobile{
         display:flex;
+        align-items: center;
     }
     #polaroid4{
         transform: rotate(6deg);
@@ -550,6 +551,22 @@ body{
     }
     .polaroid-container-mobile{
         gap:0;
+    }
+}
+
+@media(max-width:400px){
+    :root{
+        --h1:55px;
+    }
+    .polaroid-container-mobile{
+        flex-direction: column;
+    }
+    .header{
+        padding:20px;
+    }
+    .socials img{
+        height:40px;
+        width:40px;
     }
 }
 
