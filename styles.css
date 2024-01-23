@@ -385,7 +385,7 @@ body{
     align-items: center;
 }
 
-.current-favorites section div{
+.current-favorites section a{
     background-size: contain;
     background-repeat: no-repeat;
     height: var(--thumbnail);
@@ -395,7 +395,7 @@ body{
     transition: all 0.5s;
 }
 
-.current-favorites section div:hover{
+.current-favorites section a:hover{
     scale: 1.05;
 }
 
@@ -569,6 +569,16 @@ body{
         --p:17px;
         --thumbnail:396.8px;
     }
+    .media{
+        padding: 2px 5px;
+        height:30px;
+    }
+    .media p{
+        margin:0;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+    }
     #hair{
         height:320px;
     }
@@ -610,29 +620,7 @@ body{
         width: calc(100% - 20px);
         margin:10px;
         height:170px;
-    }
-    /* .p2before{
-        transform:rotate(-46.5deg) !important;
-        opacity: 0;
-    }
-    
-    #polaroid2{
-        transform:rotate(-6.5deg);
-        z-index: 1;
-    }
-    
-    .p1before{
-        transform:rotate(-36.5deg) !important;
-        opacity:0;
-    
-    }
-    
-    #polaroid1{
-        transform: rotate(3.5deg) translate(0px);
-        z-index: 2;
-    }
-     */
-    
+    }    
 
 }
 
