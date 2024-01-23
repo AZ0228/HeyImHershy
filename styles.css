@@ -560,12 +560,17 @@ body{
 }
 
 @media(max-width:400px){
+
     :root{
         --h1:55px;
+        --thumbnail: 330px;
     }
-    .polaroid-container-mobile{
+    .middle-text{
+        scale:0.4;
+    }
+    /* .polaroid-container-mobile{
         flex-direction: column;
-    }
+    } */
     .header{
         padding:20px;
     }
@@ -573,7 +578,16 @@ body{
         height:40px;
         width:40px;
     }
-    .p2before{
+    .polaroid{
+        width:150px;
+        height:170px;
+    }
+    .pic{
+        width: calc(100% - 20px);
+        margin:10px;
+        height:130px;
+    }
+    /* .p2before{
         transform:rotate(-46.5deg) !important;
         opacity: 0;
     }
@@ -593,7 +607,7 @@ body{
         transform: rotate(3.5deg) translate(0px);
         z-index: 2;
     }
-    
+     */
     
 
 }
