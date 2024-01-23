@@ -573,6 +573,29 @@ body{
         height:40px;
         width:40px;
     }
+    .p2before{
+        transform:rotate(-46.5deg) !important;
+        opacity: 0;
+    }
+    
+    #polaroid2{
+        transform:rotate(-6.5deg);
+        z-index: 1;
+    }
+    
+    .p1before{
+        transform:rotate(-36.5deg) !important;
+        opacity:0;
+    
+    }
+    
+    #polaroid1{
+        transform: rotate(3.5deg) translate(0px);
+        z-index: 2;
+    }
+    
+    
+
 }
 
 /**/
