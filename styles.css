@@ -580,12 +580,12 @@ body{
     }
     .polaroid{
         width:185px;
-        height:200px;
+        height:210px;
     }
     .pic{
         width: calc(100% - 20px);
         margin:10px;
-        height:150px;
+        height:170px;
     }
     /* .p2before{
         transform:rotate(-46.5deg) !important;
