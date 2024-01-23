@@ -566,7 +566,7 @@ body{
         --thumbnail: 330px;
     }
     .middle-text{
-        scale:0.4;
+        scale:0.55;
     }
     /* .polaroid-container-mobile{
         flex-direction: column;
@@ -579,13 +579,13 @@ body{
         width:40px;
     }
     .polaroid{
-        width:150px;
-        height:170px;
+        width:185px;
+        height:200px;
     }
     .pic{
         width: calc(100% - 20px);
         margin:10px;
-        height:130px;
+        height:150px;
     }
     /* .p2before{
         transform:rotate(-46.5deg) !important;
